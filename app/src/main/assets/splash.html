@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            padding: 24px;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            font-size: 24px;
+            color: #38bdf8;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 32px;
+            max-width: 280px;
+        }
+        button {
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 28px;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <div class="content">
+        <h1>HTML5 / JS Hybrid</h1>
+        <p>Rendered via WebView Asset Canvas with JavascriptInterface Bridge</p>
+        <button onclick="triggerJsBridge()">Launch via JS Bridge</button>
+    </div>
+
+    <script>
+        // Canvas Fluid Particle Animation
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+
+        function resize() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resize);
+        resize();
+
+        let time = 0;
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            time += 0.02;
+
+            for (let i = 0; i < 5; i++) {
+                ctx.beginPath();
+                ctx.fillStyle = `rgba(56, 189, 248, ${0.08 - i * 0.015})`;
+                ctx.arc(
+                    width / 2 + Math.sin(time + i) * 60,
+                    height / 2 + Math.cos(time * 0.8 + i) * 80,
+                    120 + i * 40,
+                    0, Math.PI * 2
+                );
+                ctx.fill();
+            }
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        function triggerJsBridge() {
+            if (window.WebBridge && window.WebBridge.onStartApp) {
+                window.WebBridge.onStartApp("HTML5 Canvas JS Button Clicked");
+            } else {
+                alert("JS Bridge not attached!");
+            }
+        }
+    </script>
+</body>
+</html>

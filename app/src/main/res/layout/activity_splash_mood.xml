@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v22_title"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivMoodLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginVertical="28dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvMoodPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/v22_prompt"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="#E2E8F0" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:chipSpacingHorizontal="8dp"
+        app:chipSpacingVertical="8dp"
+        app:singleLine="false"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipProductive"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/v22_chip_productive"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipCalm"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v22_chip_calm"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipLearning"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v22_chip_learning"
+            android:textColor="@android:color/white" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipRelaxed"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/v22_chip_relaxed"
+            android:textColor="@android:color/white" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinueMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as Productive"
+        app:icon="@android:drawable/ic_media_play" />
+
+</LinearLayout>

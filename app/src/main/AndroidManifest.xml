@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ManyStartActivities">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TargetActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.StandardSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.PreloadSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.OnboardingSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.InteractiveSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.MotionSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.SystemSplashActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App.Starting" />
+
+        <activity
+            android:name=".variants.FlashlightSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.AssembleSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.PendulumSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.UnboxingSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.TypewriterSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.PortalSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.BreathingSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.RitualSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.ContextualSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.QuoteSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.SlideSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.VideoSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.MapSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.WebViewSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.ParticleSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.MoodSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.BottomSheetSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.CameraSplashActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".variants.CalendarSplashActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

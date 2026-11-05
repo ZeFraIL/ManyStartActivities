@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">Start Screens Showcase</string>
+    <string name="catalog_subtitle">Interactive collection of Android Splash Screen patterns for students</string>
+
+    <!-- Target Activity strings -->
+    <string name="target_title">Main Application Home</string>
+    <string name="target_welcome">Welcome to the App!</string>
+    <string name="target_source_label">Launched from:</string>
+    <string name="target_trigger_label">Transition Trigger:</string>
+    <string name="btn_back_to_catalog">Return to Catalog</string>
+
+    <!-- Variant 1: Standard Student Splash -->
+    <string name="v0_title">1. Standard Student Splash</string>
+    <string name="v0_desc">Logo scale animation (5s), manual Continue button, and automatic timer (7s).</string>
+    <string name="v0_screen_title">Welcome Screen</string>
+    <string name="v0_timer_running">Auto-navigating in %1$d seconds...</string>
+    <string name="v0_btn_continue">Continue Now</string>
+    <string name="trigger_v0_button">Manual Button Click (Continue)</string>
+    <string name="trigger_v0_timer">Automatic Timer (7 Seconds)</string>
+
+    <!-- Variant 2: Simulated Preloading Splash -->
+    <string name="v1_title">2. Pre-loading &amp; Init Splash</string>
+    <string name="v1_desc">Simulates background tasks (network check, configs, assets) with progress bar.</string>
+    <string name="v1_status_start">Initializing application...</string>
+    <string name="v1_status_network">Checking network connectivity...</string>
+    <string name="v1_status_user">Loading user preferences...</string>
+    <string name="v1_status_resources">Preparing local database...</string>
+    <string name="v1_status_done">All systems ready!</string>
+    <string name="trigger_v1">Preloading Complete (100%)</string>
+
+    <!-- Variant 3: Mini-Onboarding Slider Splash -->
+    <string name="v2_title">3. Mini-Onboarding Slider</string>
+    <string name="v2_desc">Carousel of feature cards (ViewPager2) with dots indicator, Skip, and Get Started buttons.</string>
+    <string name="v2_slide1_title">Discover Features</string>
+    <string name="v2_slide1_desc">Learn about modern Android navigation patterns and splash design strategies.</string>
+    <string name="v2_slide2_title">Interactive Demos</string>
+    <string name="v2_slide2_desc">Test different user experiences and transitions right in your app.</string>
+    <string name="v2_slide3_title">Ready to Begin</string>
+    <string name="v2_slide3_desc">Apply best practices to your own student Android projects today!</string>
+    <string name="v2_btn_skip">Skip</string>
+    <string name="v2_btn_next">Next</string>
+    <string name="v2_btn_start">Get Started</string>
+    <string name="trigger_v2_skip">Onboarding Skipped</string>
+    <string name="trigger_v2_complete">Onboarding Completed (Get Started)</string>
+
+    <!-- Variant 4: Interactive Gesture Entrance -->
+    <string name="v3_title">4. Interactive Gesture Entrance</string>
+    <string name="v3_desc">Interactive splash requiring user action (swipe up or triple-tap logo) to enter.</string>
+    <string name="v3_prompt_swipe">Swipe UP on logo to enter</string>
+    <string name="v3_prompt_tap">Or tap logo 3 times: %1$d/3</string>
+    <string name="v3_unlocked">Screen Unlocked!</string>
+    <string name="trigger_v3_swipe">Swipe Up Gesture</string>
+    <string name="trigger_v3_tap">Triple Tap Interaction</string>
+
+    <!-- Variant 5: Sequential Motion Assembly -->
+    <string name="v4_title">5. Sequential Motion Assembly</string>
+    <string name="v4_desc">Multi-element animation using AnimatorSet (fade, slide in, scale logo elements).</string>
+    <string name="v4_tagline">Crafting Beautiful Android Interfaces</string>
+    <string name="trigger_v4">Animation Sequence Completed</string>
+
+    <!-- Variant 6: System Splash API (Android 12+) -->
+    <string name="v5_title">6. System Splash Theme (Android 12+)</string>
+    <string name="v5_desc">Official Android SplashScreen API integration using window background theme.</string>
+    <string name="trigger_v5">System SplashScreen Dismissed</string>
+
+    <!-- Variant 7: Flashlight Reveal (Spotlight) -->
+    <string name="v7_title">7. Flashlight Reveal (Spotlight)</string>
+    <string name="v7_desc">Dark screen overlay revealed under finger movements using custom Canvas &amp; PorterDuff.CLEAR.</string>
+    <string name="v7_prompt">Move finger to shine flashlight and reveal logo</string>
+    <string name="v7_btn_enter">Enter Application</string>
+    <string name="trigger_v7_revealed">Flashlight Reveal Completed</string>
+    <string name="trigger_v7_button">Manual Button Click (Enter)</string>
+
+    <!-- Variant 8: Assemble Logo (Spring Puzzle) -->
+    <string name="v8_title">8. Assemble Logo (Spring Puzzle)</string>
+    <string name="v8_desc">Logo split into 4 corner pieces flying to center via SpringAnimation. Tap pieces to speed up.</string>
+    <string name="v8_prompt">Tap pieces or watch them spring together!</string>
+    <string name="v8_status_assembled">Logo Assembled!</string>
+    <string name="trigger_v8">Logo Assembled (Spring Animation)</string>
+
+    <!-- Variant 9: Pendulum Tilt Physics -->
+    <string name="v9_title">9. Pendulum Tilt Physics</string>
+    <string name="v9_desc">Logo reacts dynamically to physical device tilt using SensorManager accelerometer.</string>
+    <string name="v9_prompt">Tilt device left or right to sway logo</string>
+    <string name="v9_sensor_unavailable">Accelerometer sensor not detected (Simulation Mode)</string>
+    <string name="v9_btn_enter">Enter Application</string>
+    <string name="trigger_v9">Tilt Sensor Interaction</string>
+
+    <!-- Variant 10: Swipe Unboxing (Gift Box) -->
+    <string name="v10_title">10. Swipe Unboxing (Gift Box)</string>
+    <string name="v10_desc">Gift box ribbon overlay. Swipe downward on the ribbon to unwrap the app logo.</string>
+    <string name="v10_prompt">Swipe DOWN on the ribbon to unwrap</string>
+    <string name="v10_unwrapped">Unwrapped!</string>
+    <string name="trigger_v10">Ribbon Swipe Gesture</string>
+
+    <!-- Variant 11: Typewriter with Typo Correction -->
+    <string name="v11_title">11. Typewriter with Typo Correction</string>
+    <string name="v11_desc">Letter-by-letter typing animation using Handler with intentional typo backspace correction.</string>
+    <string name="trigger_v11">Typewriter Animation Completed</string>
+
+    <!-- Variant 12: Portal Fly-In (RenderEffect Blur) -->
+    <string name="v12_title">12. Portal Fly-In (RenderEffect Blur)</string>
+    <string name="v12_desc">Seamless transition zooming into target preview using RenderEffect blur removal (API 31+).</string>
+    <string name="v12_status_entering">Entering Application Portal...</string>
+    <string name="trigger_v12">Portal Camera Fly-In Completed</string>
+
+    <!-- Variant 13: App Breathing (Hold to Wake) -->
+    <string name="v13_title">13. App Breathing (Hold to Wake)</string>
+    <string name="v13_desc">Sleeping pulse animation. Press and hold to awaken the app and accelerate breathing pulse.</string>
+    <string name="v13_prompt_sleep">Press and hold screen to wake up...</string>
+    <string name="v13_prompt_waking">Waking up application...</string>
+    <string name="v13_awake">Application Awakened!</string>
+    <string name="trigger_v13">Touch Hold Wake-Up Gesture</string>
+
+    <!-- Variant 14: Domain Micro-Ritual (Pinch & Salt) -->
+    <string name="v14_title">14. Domain Micro-Ritual (Pinch &amp; Salt)</string>
+    <string name="v14_desc">Culinary domain ritual: Pinch or tap multi-touch to salt the dish and reveal app logo.</string>
+    <string name="v14_prompt">Pinch or tap with 2 fingers to salt the dish!</string>
+    <string name="v14_seasoned">Dish Seasoned &amp; Ready!</string>
+    <string name="trigger_v14">Domain Salt Micro-Ritual</string>
+
+    <!-- Variant 15: Contextual Greeting (Time & Battery) -->
+    <string name="v15_title">15. Contextual Greeting (Time &amp; Battery)</string>
+    <string name="v15_desc">Adapts greeting and theme to current hour (Calendar) and battery level (BatteryManager).</string>
+    <string name="v15_morning">Good Morning, Early Bird! ☀️</string>
+    <string name="v15_afternoon">Good Afternoon! 🌤️</string>
+    <string name="v15_evening">Good Evening, Night Owl! 🌙</string>
+    <string name="v15_battery_normal">Battery status normal (%1$d%%)</string>
+    <string name="v15_battery_low">Low battery alert (%1$d%%)! App shivering...</string>
+    <string name="trigger_v15">Contextual Environment State</string>
+
+    <!-- Variant 16: Quote of the Day (Shakespeare & SharedPreferences) -->
+    <string name="v16_title">16. Quote of the Day (Shakespeare)</string>
+    <string name="v16_desc">Displays a random Shakespeare quote, saving total views and preventing consecutive duplicates via SharedPreferences.</string>
+    <string name="v16_label">Quote of the Day</string>
+    <string name="v16_views_count">Total quotes viewed: %1$d</string>
+    <string name="trigger_v16">Quote of the Day Displayed</string>
+
+    <!-- Variant 17: Slide to Start (SeekBar / Slider) -->
+    <string name="v17_title">17. Slide to Start (SeekBar / Slider)</string>
+    <string name="v17_desc">Slider at bottom required to drag to 100% to enter. Snaps back to 0 if released early.</string>
+    <string name="v17_prompt">Slide to start... (%1$d%%)</string>
+    <string name="trigger_v17">Slide to Start Completed (100%)</string>
+
+    <!-- Variant 18: Video Background (VideoView) -->
+    <string name="v18_title">18. Video Background (VideoView)</string>
+    <string name="v18_desc">Plays a looping silent video background behind logo and enter button using VideoView / MediaPlayer.</string>
+    <string name="v18_prompt">Cinematic Video Background</string>
+    <string name="v18_no_video">Video file (res/raw/splash_video.mp4) not found. Displaying fallback background animation.</string>
+    <string name="trigger_v18">Video Background Screen Entered</string>
+
+    <!-- Variant 19: Interactive Map & Pin Drop -->
+    <string name="v19_title">19. Interactive Map &amp; Pin Drop</string>
+    <string name="v19_desc">Map View zooming into Beer Sheva coordinates (31.2530° N, 34.7915° E) and dropping a logo pin marker.</string>
+    <string name="v19_status">Zooming to location: Beer Sheva, Israel...</string>
+    <string name="trigger_v19">Map Zoom &amp; Pin Drop Completed</string>
+
+    <!-- Variant 20: HTML5 / JS Hybrid (WebView & JavascriptInterface) -->
+    <string name="v20_title">20. HTML5 / JS Hybrid (WebView)</string>
+    <string name="v20_desc">Loads an animated HTML5 Canvas from assets/splash.html with a @JavascriptInterface bridge triggering native navigation.</string>
+    <string name="trigger_v20">JavaScript Bridge Call (@JavascriptInterface)</string>
+
+    <!-- Variant 21: Particle Physics Engine (SurfaceView) -->
+    <string name="v21_title">21. Particle Physics Engine (SurfaceView)</string>
+    <string name="v21_desc">Custom SurfaceView with a dedicated background thread rendering 120 particles converging to assemble logo shape.</string>
+    <string name="v21_status">Assembling 120 particles in real-time...</string>
+    <string name="trigger_v21">Particle Convergence Engine Completed</string>
+
+    <!-- Variant 22: Mood Selector Persona (ChipGroup) -->
+    <string name="v22_title">22. Mood Selector Persona (ChipGroup)</string>
+    <string name="v22_desc">Prompts "How are you feeling today?" with 4 Material 3 Choice Chips altering theme tint and passing chosen mood via Intent.</string>
+    <string name="v22_prompt">How are you feeling today?</string>
+    <string name="v22_chip_productive">🚀 Productive</string>
+    <string name="v22_chip_calm">😌 Calm</string>
+    <string name="v22_chip_learning">🤔 Learning</string>
+    <string name="v22_chip_relaxed">🎮 Relaxed</string>
+    <string name="v22_btn_continue">Continue as %1$s</string>
+    <string name="trigger_v22">Mood Persona Selected (%1$s)</string>
+
+    <!-- Variant 23: Bottom Sheet Entrance (BottomSheetBehavior) -->
+    <string name="v23_title">23. Bottom Sheet Entrance (BottomSheetBehavior)</string>
+    <string name="v23_desc">Peeked BottomSheet over logo layout. Performs a 3-second Y-translation bounce hint animation if untouched.</string>
+    <string name="v23_sheet_title">Quick Access Options</string>
+    <string name="v23_btn_guest">Enter as Guest</string>
+    <string name="v23_btn_options">Preferences &amp; Settings</string>
+    <string name="trigger_v23_guest">Bottom Sheet Guest Entrance</string>
+    <string name="trigger_v23_drag">Bottom Sheet Dragged Upward</string>
+
+    <!-- Variant 24: Mirror CameraX Start (CameraX) -->
+    <string name="v24_title">24. Mirror CameraX Start (CameraX)</string>
+    <string name="v24_desc">Front camera mirror feed using CameraX PreviewView with logo mask overlay and privacy disclaimer.</string>
+    <string name="v24_privacy_disclaimer">🔒 Privacy Disclaimer: Camera feed is processed live on-device only and is NEVER stored or uploaded.</string>
+    <string name="v24_snap_prompt">Tap camera preview to snap &amp; enter!</string>
+    <string name="trigger_v24">Camera Mirror Face Overlay Captured</string>
+
+    <!-- Variant 25: Calendar Streak & Time Context -->
+    <string name="v25_title">25. Calendar Streak &amp; Time Context</string>
+    <string name="v25_desc">Displays CalendarView highlighting today\'s date, calculates daily launch streaks in SharedPreferences, and spins clock hands into logo.</string>
+    <string name="v25_streak">Daily Streak: %1$d Days in a Row! 🔥</string>
+    <string name="trigger_v25">Calendar Streak Check Completed</string>
+
+    <!-- Educational Explanations for Dialogs -->
+    <string name="v1_exp">The classic student splash pattern featuring a scaling logo animation, a manual Continue button, and an automatic CountDownTimer fallback. It teaches basic Activity navigation, ObjectAnimator scaling, and managing timer lifecycles gracefully.</string>
+    <string name="v2_exp">Simulates background initialization tasks such as checking network connectivity, fetching remote configs, and preparing local database tables. Uses LinearProgressIndicator and Handler delays to teach structured async task feedback, transitioning immediately upon 100% completion.</string>
+    <string name="v3_exp">A feature intro carousel built with ViewPager2, TabLayout dot indicators, and dynamic navigation buttons. Teaches swipeable adapters, onboarding state handling, and providing users immediate value before entering the main app.</string>
+    <string name="v4_exp">Requires explicit user interaction to enter, supporting either a vertical swipe gesture or a triple-tap tap counter on the logo. Teaches GestureDetector fling handling, touch event consumption, and interactive unlock transitions.</string>
+    <string name="v5_exp">A multi-element animation sequence using AnimatorSet to coordinate scaling, sliding, and fading multiple UI components in order. Teaches complex animation timing, interpolators, and polished visual branding transitions.</string>
+    <string name="v6_exp">Integrates the official Android 12+ SplashScreen API (androidx.core:core-splashscreen) using window background themes and setKeepOnScreenCondition. Teaches modern system splash guidelines without creating unnecessary blank frames or delay activities.</string>
+    <string name="v7_exp">Uses a custom View overlay with PorterDuff.Mode.CLEAR on a Canvas to erase a black mask under the user\'s finger movements. Teaches custom View drawing, PorterDuff xfermodes, and creating playful, curious user discovery moments.</string>
+    <string name="v8_exp">Logo pieces start scattered across screen corners and fly to the center target via OvershootInterpolator spring physics. Tapping individual pieces accelerates their arrival, teaching multi-view coordinate math and interactive layout animations.</string>
+    <string name="v9_exp">Connects to SensorManager to read accelerometer tilt events, dynamically rotating and swaying the logo in real time as the physical phone moves. Teaches Android sensor listeners, orientation math, and fallback simulation modes for emulators.</string>
+    <string name="v10_exp">Features a gift box ribbon overlay. Listening to a downward fling gesture via GestureDetector, it uses ViewPropertyAnimator to unwrap the ribbon and open the gift box, teaching gesture-driven unboxing rituals.</string>
+    <string name="v11_exp">Sequentially types out title text character-by-character using Handler.postDelayed(), featuring an intentional typo and backspace correction sequence. Teaches string substring manipulation, Handler timing loops, and humanized UI animations.</string>
+    <string name="v12_exp">Renders a blurred and scaled-down preview of the target destination screen using RenderEffect.createBlurEffect (API 31+). Over 2.5 seconds, the camera zooms in smoothly while removing blur, teaching seamless screen transitions and RenderEffect graphics.</string>
+    <string name="v13_exp">Features a sleeping logo pulse powered by ValueAnimator. Holding down on the screen (ACTION_DOWN) brightens the background and accelerates breathing until awake, teaching touch state handling and dynamic animator parameters.</string>
+    <string name="v14_exp">A domain-specific culinary ritual where multi-touch or tap gestures spawn animated salt particles that fall over a dish, gradually revealing the logo. Teaches domain-driven UX design, multi-touch event handling, and particle animations.</string>
+    <string name="v15_exp">Dynamically reads system time (Calendar) to show time-appropriate greetings and themes, while querying BatteryManager to trigger a jitter animation if battery is below 15%. Teaches system environment awareness and context-adaptive UI design.</string>
+    <string name="v16_exp">Selects a random Shakespeare quote from an array on startup, using SharedPreferences to persist total quote views and prevent showing the exact same quote on consecutive launches. Teaches data persistence, key-value storage, and array randomization.</string>
+    <string name="v17_exp">Requires dragging a SeekBar or Slider control to 100% to unlock the application, snapping back to zero if released early. Teaches SeekBar.OnSeekBarChangeListener, live progress tracking, custom slider styling, and touch snap-back logic.</string>
+    <string name="v18_exp">Plays a silent looping video clip in the background using VideoView and MediaPlayer.OnPreparedListener setLooping(true). Teaches media playback lifecycles, raw resource handling, and evaluating performance tradeoffs of heavy video splash assets.</string>
+    <string name="v19_exp">Renders a map layout zooming smoothly into specific coordinates (Beer Sheva, Israel) and dropping a logo location marker pin. Teaches map integration concepts, camera updates, location permissions, and marker animations.</string>
+    <string name="v20_exp">Loads a local HTML5 Canvas animation from assets/splash.html inside a WebView. Uses addJavascriptInterface to bind a Java bridge, allowing JavaScript user clicks or canvas events to trigger native Android Activity navigation.</string>
+    <string name="v21_exp">Features a custom SurfaceView driven by a background render thread (SurfaceHolder.Callback). Animates 120 particle physics objects with velocity and attraction forces converging off the UI thread to form the logo.</string>
+    <string name="v22_exp">Offers a Material 3 ChipGroup single-selection interface ("🚀 Productive", "😌 Calm", "🤔 Learning", "🎮 Relaxed") that alters background theme tint dynamically and passes user persona data via Intent extras for immediate UX personalization.</string>
+    <string name="v23_exp">Employs CoordinatorLayout and BottomSheetBehavior with a peeked sheet over background artwork. Includes a 3-second inactivity timer that triggers a subtle Y-translation bounce hint animation to guide user interaction.</string>
+    <string name="v24_exp">Integrates CameraX PreviewView with front camera binding and an explicit privacy disclosure banner. Teaches CameraX lifecycle binding, CameraSelector.LENS_FACING_FRONT, runtime camera permissions, and privacy best practices.</string>
+    <string name="v25_exp">Features CalendarView with today\'s date highlighted, calculating consecutive daily app launch streaks stored in SharedPreferences. Teaches Calendar date arithmetic, SharedPreferences persistence, and clock rotation animations.</string>
+
+    <!-- Common -->
+    <string name="btn_launch_demo">Launch Demo</string>
+    <string name="btn_info_dialog">Info</string>
+    <string name="btn_close_dialog">Got It</string>
+</resources>
