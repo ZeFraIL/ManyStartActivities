@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Start Screens Showcase</string>
     <string name="catalog_subtitle">Interactive collection of Android Splash Screen patterns for students</string>
+    <string name="lang_switch_button">עברית</string>
 
     <!-- Target Activity strings -->
     <string name="target_title">Main Application Home</string>

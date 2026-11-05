@@ -16,6 +16,12 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.widget.Button;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.core.os.LocaleListCompat;
+
+import java.util.Locale;
+
 import zeev.fraiman.manystartactivities.adapter.VariantAdapter;
 import zeev.fraiman.manystartactivities.model.SplashVariant;
 import zeev.fraiman.manystartactivities.variants.AssembleSplashActivity;
@@ -57,6 +63,19 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button btnLanguageSwitch = findViewById(R.id.btnLanguageSwitch);
+        if (btnLanguageSwitch != null) {
+            btnLanguageSwitch.setOnClickListener(v -> {
+                Locale currentLocale = getResources().getConfiguration().getLocales().get(0);
+                String lang = currentLocale.getLanguage();
+                if ("he".equalsIgnoreCase(lang) || "iw".equalsIgnoreCase(lang)) {
+                    AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("en"));
+                } else {
+                    AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("he"));
+                }
+            });
+        }
 
         RecyclerView rvVariants = findViewById(R.id.rvVariants);
         rvVariants.setLayoutManager(new LinearLayoutManager(this));
