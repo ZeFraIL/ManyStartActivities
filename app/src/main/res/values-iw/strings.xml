@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">תצוגת מסכי פתיחה</string>
+    <string name="catalog_subtitle">אוסף אינטראקטיבי של תבניות מסכי פתיחה ב-Android לתלמידים</string>
+    <string name="lang_switch_button">English</string>
+
+    <!-- Target Activity strings -->
+    <string name="target_title">מסך הבית הראשי של האפליקציה</string>
+    <string name="target_welcome">ברוכים הבאים לאפליקציה!</string>
+    <string name="target_source_label">הופעל מ:</string>
+    <string name="target_trigger_label">טריגר המעבר:</string>
+    <string name="btn_back_to_catalog">חזרה לקטלוג</string>
+
+    <!-- Variant 1: Standard Student Splash -->
+    <string name="v0_title">1. מסך פתיחה סטנדרטי לתלמידים</string>
+    <string name="v0_desc">אנימציית הגדלת לוגו (5 שניות), כפתור המשך ידני וטיימר אוטומטי (7 שניות).</string>
+    <string name="v0_screen_title">מסך ברוכים הבאים</string>
+    <string name="v0_timer_running">מעבר אוטומטי בעוד %1$d שניות...</string>
+    <string name="v0_btn_continue">המשך עכשיו</string>
+    <string name="trigger_v0_button">לחיצה ידנית על כפתור (המשך)</string>
+    <string name="trigger_v0_timer">טיימר אוטומטי (7 שניות)</string>
+
+    <!-- Variant 2: Simulated Preloading Splash -->
+    <string name="v1_title">2. מסך טעינה מוקדמת ואתחול</string>
+    <string name="v1_desc">סימולציית משימות רקע (בדיקת רשת, הגדרות, משאבים) עם פס התקדמות.</string>
+    <string name="v1_status_start">מאתחל את האפליקציה...</string>
+    <string name="v1_status_network">בודק חיבור לרשת...</string>
+    <string name="v1_status_user">טוען הגדרות משתמש...</string>
+    <string name="v1_status_resources">מכין מסד נתונים מקומי...</string>
+    <string name="v1_status_done">כל המערכות מוכנות!</string>
+    <string name="trigger_v1">טעינה מוקדמת הושלמה (100%)</string>
+
+    <!-- Variant 3: Mini-Onboarding Slider Splash -->
+    <string name="v2_title">3. מצגת הדרכה קצרה</string>
+    <string name="v2_desc">קרוסלת כרטיסיות (ViewPager2) עם נקודות אינדיקציה, כפתורי דילוג והתחלה.</string>
+    <string name="v2_slide1_title">גלה תכונות חדשות</string>
+    <string name="v2_slide1_desc">למד על תבניות ניווט מודרניות ואסטרטגיות עיצוב מסכי פתיחה ב-Android.</string>
+    <string name="v2_slide2_title">דמואים אינטראקטיביים</string>
+    <string name="v2_slide2_desc">בחינת חוויית משתמש ומעברים שונים ישירות באפליקציה שלך.</string>
+    <string name="v2_slide3_title">מוכן להתחיל</string>
+    <string name="v2_slide3_desc">יישם שיטות מומלצות בפרויקטי ה-Android שלך כבר היום!</string>
+    <string name="v2_btn_skip">דלג</string>
+    <string name="v2_btn_next">הבא</string>
+    <string name="v2_btn_start">בוא נתחיל</string>
+    <string name="trigger_v2_skip">הדרכה דולגה</string>
+    <string name="trigger_v2_complete">הדרכה הושלמה (בוא נתחיל)</string>
+
+    <!-- Variant 4: Interactive Gesture Entrance -->
+    <string name="v3_title">4. כניסה במחווה אינטראקטיבית</string>
+    <string name="v3_desc">מסך אינטראקטיבי הדורש פעולת משתמש (מחווה למעלה או 3 נקישות על הלוגו) לכניסה.</string>
+    <string name="v3_prompt_swipe">החלק למעלה על הלוגו כדי להיכנס</string>
+    <string name="v3_prompt_tap">או הקש על הלוגו 3 פעמים: %1$d/3</string>
+    <string name="v3_unlocked">המסך שוחרר!</string>
+    <string name="trigger_v3_swipe">מחוות החלקה למעלה</string>
+    <string name="trigger_v3_tap">אינטראקציית שלוש נקישות</string>
+
+    <!-- Variant 5: Sequential Motion Assembly -->
+    <string name="v4_title">5. הרכבת תנועה סדרתית</string>
+    <string name="v4_desc">אנימציה רב-אלמנטים באמצעות AnimatorSet (הופעה, החלקה, הגדלת רכיבי הלוגו).</string>
+    <string name="v4_tagline">עיצוב ממשקי Android מרהיבים</string>
+    <string name="trigger_v4">סדרת האנימציה הושלמה</string>
+
+    <!-- Variant 6: System Splash API (Android 12+) -->
+    <string name="v5_title">6. ערכת נושא מערכת (Android 12+)</string>
+    <string name="v5_desc">שילוב SplashScreen API הרשמי של Android באמצעות ערכת נושא של החלון.</string>
+    <string name="trigger_v5">מסך הפתיחה של המערכת נסגר</string>
+
+    <!-- Variant 7: Flashlight Reveal (Spotlight) -->
+    <string name="v7_title">7. חשיפת פנס (זרקור)</string>
+    <string name="v7_desc">שכבת מסך כהה נחשפת בתנועת האצבע באמצעות Canvas מותאם ו-PorterDuff.CLEAR.</string>
+    <string name="v7_prompt">הזז את האצבע כדי להאיר בפנס ולחשוף את הלוגו</string>
+    <string name="v7_btn_enter">כניסה לאפליקציה</string>
+    <string name="trigger_v7_revealed">חשיפת הפנס הושלמה</string>
+    <string name="trigger_v7_button">לחיצה ידנית על כפתור (כניסה)</string>
+
+    <!-- Variant 8: Assemble Logo (Spring Puzzle) -->
+    <string name="v8_title">8. הרכבת לוגו (פאזל קפיצי)</string>
+    <string name="v8_desc">לוגו המחולק ל-4 חלקים בפינות שטסים למרכז עם SpringAnimation. הקש על החלקים לזרוז.</string>
+    <string name="v8_prompt">הקש על החלקים או צפה בהם נמשכים יחד!</string>
+    <string name="v8_status_assembled">הלוגו הורכב!</string>
+    <string name="trigger_v8">הלוגו הורכב (אנימציית קפיץ)</string>
+
+    <!-- Variant 9: Pendulum Tilt Physics -->
+    <string name="v9_title">9. פיזיקת מטוטלת והטיה</string>
+    <string name="v9_desc">הלוגו מגיב בזמן אמת להטיית המכשיר באמצעות מד התאוצה (SensorManager).</string>
+    <string name="v9_prompt">הטה את המכשיר שמאלה או ימינה כדי להניע את הלוגו</string>
+    <string name="v9_sensor_unavailable">חיישן מד תאוצה לא זוהה (מצב סימולציה)</string>
+    <string name="v9_btn_enter">כניסה לאפליקציה</string>
+    <string name="trigger_v9">אינטראקציית חיישן הטיה</string>
+
+    <!-- Variant 10: Swipe Unboxing (Gift Box) -->
+    <string name="v10_title">10. פתיחת קופסת מתנה (החלקה)</string>
+    <string name="v10_desc">סרט מתנה על המסך. החלק למטה על הסרט כדי לפתוח את לוגו האפליקציה.</string>
+    <string name="v10_prompt">החלק למטה על הסרט כדי לפתוח</string>
+    <string name="v10_unwrapped">נפתח בהצלחה!</string>
+    <string name="trigger_v10">מחוות החלקה על הסרט</string>
+
+    <!-- Variant 11: Typewriter with Typo Correction -->
+    <string name="v11_title">11. מכונת כתיבה עם תיקון טעויות</string>
+    <string name="v11_desc">אנימציית הקלדה אות-אחר-אות באמצעות Handler עם תיקון שגיאת כתיב יזום.</string>
+    <string name="trigger_v11">אנימציית מכונת כתיבה הושלמה</string>
+
+    <!-- Variant 12: Portal Fly-In (RenderEffect Blur) -->
+    <string name="v12_title">12. כניסה דרך פורטל (טשטוש RenderEffect)</string>
+    <string name="v12_desc">מעבר חלק עם זום לתצוגה מקדימה והסרת טשטוש RenderEffect (API 31+).</string>
+    <string name="v12_status_entering">נכנס לפורטל האפליקציה...</string>
+    <string name="trigger_v12">כניסת מצלמת הפורטל הושלמה</string>
+
+    <!-- Variant 13: App Breathing (Hold to Wake) -->
+    <string name="v13_title">13. נשימת אפליקציה (לחיצה להערה)</string>
+    <string name="v13_desc">אנימציית דופק מנוחה. לחץ והחזק כדי להעיר את האפליקציה ולהאיץ את קצב הנשימה.</string>
+    <string name="v13_prompt_sleep">לחץ והחזק את המסך כדי להעיר...</string>
+    <string name="v13_prompt_waking">מעיר את האפליקציה...</string>
+    <string name="v13_awake">האפליקציה התעוררה!</string>
+    <string name="trigger_v13">מחוות לחיצה ממושכת להערה</string>
+
+    <!-- Variant 14: Domain Micro-Ritual (Pinch & Salt) -->
+    <string name="v14_title">14. מיקרו-ריטואל קולינרי (צביטה ומלח)</string>
+    <string name="v14_desc">ריטואל קולינרי: צבוט או הקש בריבוי נגיעות כדי להמליח את המנה ולחשוף את הלוגו.</string>
+    <string name="v14_prompt">צבוט או הקש בשתי אצבעות כדי להמליח את המנה!</string>
+    <string name="v14_seasoned">המנה מתובלת ומוכנה!</string>
+    <string name="trigger_v14">מיקרו-ריטואל המלחה</string>
+
+    <!-- Variant 15: Contextual Greeting (Time & Battery) -->
+    <string name="v15_title">15. ברכה תלויית הקשר (זמן וסוללה)</string>
+    <string name="v15_desc">מתאים את הברכה וערכת הנושא לשעה הנוכחית ולרמת הסוללה.</string>
+    <string name="v15_morning">בוקר טוב, השכמת קום! ☀️</string>
+    <string name="v15_afternoon">צהריים טובים! 🌤️</string>
+    <string name="v15_evening">ערב טוב, ציפור לילה! 🌙</string>
+    <string name="v15_battery_normal">מצב סוללה תקין (%1$d%%)</string>
+    <string name="v15_battery_low">התראת סוללה נמוכה (%1$d%%)! האפליקציה רועדת...</string>
+    <string name="trigger_v15">מצב סביבה תלוי הקשר</string>
+
+    <!-- Variant 16: Quote of the Day (Shakespeare & SharedPreferences) -->
+    <string name="v16_title">16. ציטוט היום (שייקספיר)</string>
+    <string name="v16_desc">מציג ציטוט אקראי של שייקספיר, שומר מספר צפיות כולל ומונע כפילויות ברצף.</string>
+    <string name="v16_label">ציטוט היום</string>
+    <string name="v16_views_count">סך ציטוטים שנצפו: %1$d</string>
+    <string name="trigger_v16">ציטוט היום הוצג</string>
+
+    <!-- Variant 17: Slide to Start (SeekBar / Slider) -->
+    <string name="v17_title">17. החלק להתחלה (מחוון)</string>
+    <string name="v17_desc">מחוון בתחתית הדורש גרירה ל-100% לכניסה. חוזר ל-0 אם משוחרר מוקדם.</string>
+    <string name="v17_prompt">החלק להתחלה... (%1$d%%)</string>
+    <string name="trigger_v17">החלקה להתחלה הושלמה (100%)</string>
+
+    <!-- Variant 18: Video Background (VideoView) -->
+    <string name="v18_title">18. רקע וידאו (VideoView)</string>
+    <string name="v18_desc">מנגן וידאו ללא קול בלולאה ברקע מתחת ללוגו ולכפתור הכניסה.</string>
+    <string name="v18_prompt">רקע וידאו קולנועי</string>
+    <string name="v18_no_video">קובץ הווידאו לא נמצא. מציג אנימציית רקע חלופית.</string>
+    <string name="trigger_v18">כניסה למסך רקע וידאו</string>
+
+    <!-- Variant 19: Interactive Map & Pin Drop -->
+    <string name="v19_title">19. מפה אינטראקטיבית ונעיצת סיכה</string>
+    <string name="v19_desc">תצוגת מפה המתמקדת בקואורדינטות של באר שבע ונועצת סיכת לוגו.</string>
+    <string name="v19_status">מתמקד במיקום: באר שבע, ישראל...</string>
+    <string name="trigger_v19">זום מפה ונעיצת סיכה הושלמו</string>
+
+    <!-- Variant 20: HTML5 / JS Hybrid (WebView & JavascriptInterface) -->
+    <string name="v20_title">20. היברידי HTML5 / JS (WebView)</string>
+    <string name="v20_desc">טוען Canvas מונפש ב-HTML5 מתוך assets/splash.html עם גשר @JavascriptInterface.</string>
+    <string name="trigger_v20">קריאת גשר JavaScript (@JavascriptInterface)</string>
+
+    <!-- Variant 21: Particle Physics Engine (SurfaceView) -->
+    <string name="v21_title">21. מנוע פיזיקת חלקיקים (SurfaceView)</string>
+    <string name="v21_desc">SurfaceView מותאם עם תהליכון רקע המרנדר 120 חלקיקים המתכנסים ללוגו.</string>
+    <string name="v21_status">מרכיב 120 חלקיקים בזמן אמת...</string>
+    <string name="trigger_v21">מנוע התכנסות חלקיקים הושלם</string>
+
+    <!-- Variant 22: Mood Selector Persona (ChipGroup) -->
+    <string name="v22_title">22. בחירת מצב רוח (ChipGroup)</string>
+    <string name="v22_desc">שואל "איך את/ה מרגיש/ה היום?" עם 4 שבבים לבחירה המשנים את גוון הנושא.</string>
+    <string name="v22_prompt">איך את/ה מרגיש/ה היום?</string>
+    <string name="v22_chip_productive">🚀 פרודוקטיבי</string>
+    <string name="v22_chip_calm">😌 רגוע</string>
+    <string name="v22_chip_learning">🤔 לומד</string>
+    <string name="v22_chip_relaxed">🎮 נינוח</string>
+    <string name="v22_btn_continue">המשך כ-%1$s</string>
+    <string name="trigger_v22">נבחר מצב רוח (%1$s)</string>
+
+    <!-- Variant 23: Bottom Sheet Entrance (BottomSheetBehavior) -->
+    <string name="v23_title">23. כניסה מחלונית תחתית (BottomSheet)</string>
+    <string name="v23_desc">חלונית תחתית מבצבצת מעל הלוגו עם אנימציית רמז להרמה לאחר 3 שניות.</string>
+    <string name="v23_sheet_title">אפשרויות גישה מהירה</string>
+    <string name="v23_btn_guest">כניסה כאורח</string>
+    <string name="v23_btn_options">העדפות והגדרות</string>
+    <string name="trigger_v23_guest">כניסה כאורח בחלונית תחתית</string>
+    <string name="trigger_v23_drag">גרירת חלונית תחתית למעלה</string>
+
+    <!-- Variant 24: Mirror CameraX Start (CameraX) -->
+    <string name="v24_title">24. מראה ומצלמה (CameraX)</string>
+    <string name="v24_desc">תצוגת מצלמה קדמית כמראה עם מסיכת לוגו והצהרת פרטיות.</string>
+    <string name="v24_privacy_disclaimer">🔒 הצהרת פרטיות: שידור המצלמה מעובד בזמן אמת במכשיר בלבד ואינו נשמר או מועלה לענן.</string>
+    <string name="v24_snap_prompt">הקש על תצוגת המצלמה לצלם ולהיכנס!</string>
+    <string name="trigger_v24">תמונת מראת מצלמה נלכדה</string>
+
+    <!-- Variant 25: Calendar Streak & Time Context -->
+    <string name="v25_title">25. רצף ימי לוח שנה והקשר זמן</string>
+    <string name="v25_desc">מציג לוח שנה עם הדגשת התאריך היום, מחשב רצף ימי שימוש ומסובב מחוגי שעון.</string>
+    <string name="v25_streak">רצף יומי: %1$d ימים ברציפות! 🔥</string>
+    <string name="trigger_v25">בדיקת רצף לוח שנה הושלמה</string>
+
+    <!-- Educational Explanations for Dialogs -->
+    <string name="v1_exp">תבנית מסך פתיחה קלאסית לתלמידים הכוללת אנימציית הגדלת לוגו, כפתור המשך ידני וטיימר ספירה לאחור. מלמדת ניווט בסיסי, ObjectAnimator וניהול מחזור חיים של טיימר.</string>
+    <string name="v2_exp">סימולציית משימות אתחול ברקע כגון בדיקת חיבור לרשת, טעינת הגדרות והכנת מסד נתונים. משתמשת ב-LinearProgressIndicator ו-Handler למשוב משימות אסינכרוניות.</string>
+    <string name="v3_exp">מצגת הדרכה (Onboarding) הבנויה עם ViewPager2, נקודות אינדיקציה ב-TabLayout וכפתורי ניווט דינמיים. מלמדת מתאמים נגללים וניהול מצבי הדרכה.</string>
+    <string name="v4_exp">דורש פעולה מפורשת מהמשתמש לכניסה: החלקה אנכית למעלה או 3 נקישות על הלוגו. מלמד טיפול במחוות החלקה ב-GestureDetector וזיהוי נגיעות.</string>
+    <string name="v5_exp">סדרת אנימציות באמצעות AnimatorSet לתאום הגדלה, החלקה והופעה של רכיבי UI מרובים. מלמדת תזמון אנימציות מורכב ומעברים חזותיים מלוטשים.</string>
+    <string name="v6_exp">שילוב SplashScreen API הרשמי של Android (androidx.core:core-splashscreen) באמצעות ערכות נושא ו-setKeepOnScreenCondition. מלמד עבודה נכונה לפי הנחיות המערכת.</string>
+    <string name="v7_exp">שימוש בתצוגה מותאמת אישית עם PorterDuff.Mode.CLEAR על Canvas למחיקת מסכה שחורה תחת תנועת אצבע המשתמש. מלמד ציור מותאם ב-View ושימוש ב-xfermodes.</string>
+    <string name="v8_exp">חלקים של הלוגו מתחילים מפוזרים בפינות המסך וטסים למרכז באמצעות פיזיקת קפיץ של OvershootInterpolator. הקשה על חלקים מאיצה את הגעתם.</string>
+    <string name="v9_exp">חיבור ל-SensorManager לקריאת אירועי הטיה ממד התאוצה, והנעת הלוגו בזמן אמת כשהטלפון זז. מלמד מאזיני חיישנים וחישובי זווית.</string>
+    <string name="v10_exp">מציג סרט מתנה מעל הלוגו. זיהוי החלקה למטה ב-GestureDetector ושימוש ב-ViewPropertyAnimator לפתיחת הסרט וחשיפת הלוגו.</string>
+    <string name="v11_exp">הקלדה סדרתית של טקסט אות-אחר-אות ב-Handler.postDelayed(), כולל שגיאת כתיב מתוכננת ותיקונה. מלמד מניפולציות מחרוזת ותזמון Handler.</string>
+    <string name="v12_exp">רינדור תצוגה מקדימה מטושטשת ומורחבת של מסך היעד באמצעות RenderEffect.createBlurEffect (API 31+). הסרת הטשטוש וביצוע זום חלק במשך 2.5 שניות.</string>
+    <string name="v13_exp">אנימציית דופק מנוחה של הלוגו ב-ValueAnimator. לחיצה ממושכת על המסך מבהירה את הרקע ומאיצה את הקצב עד להתעוררות האפליקציה.</string>
+    <string name="v14_exp">ריטואל קולינרי שבו נגיעות מרובות או צביטה יוצרות חלקיקי מלח הנופלים על המנה וחשופים בהדרגה את הלוגו. מלמד עיצוב תלוי תחום ואירועי ריבוי נגיעות.</string>
+    <string name="v15_exp">קריאה דינמית של שעת המערכת להצגת ברכה וערכת נושא מתאימה, יחד עם תחקור BatteryManager להפעלת רעד כשהסוללה מתחת ל-15%.</string>
+    <string name="v16_exp">בחירת ציטוט אקראי של שייקספיר מתוך מערך בעת ההפעלה, ושימוש ב-SharedPreferences לשמירת סך הצפיות ומניעת הצגת אותו ציטוט ברצף.</string>
+    <string name="v17_exp">דורש גרירת מחוון SeekBar ל-100% לשחרור האפליקציה, עם חזרה ל-0 אם משוחרר מוקדם. מלמד מעקב התקדמות ועיצוב מחוונים.</string>
+    <string name="v18_exp">ניגון וידאו ללא קול בלולאה ברקע באמצעות VideoView ו-MediaPlayer.OnPreparedListener setLooping(true). מלמד מחזור חיים של ניגון מדיה.</string>
+    <string name="v19_exp">רינדור תצוגת מפה המתמקדת בקואורדינטות של באר שבע ונועצת סיכת מיקום של הלוגו. מלמד מושגי שילוב מפה, עדכוני מצלמה ואנימציות סמנים.</string>
+    <string name="v20_exp">טעינת אנימציית HTML5 Canvas מתוך assets/splash.html בתוך WebView. שימוש ב-addJavascriptInterface לחיבור גשר Java המאפשר מעבר לניווט נייטיב.</string>
+    <string name="v21_exp">שימוש ב-SurfaceView מותאם אישית המונע ע\"י תהליכון רקע. הנפשת 120 חלקיקי פיזיקה המתכנסים מחוץ לתהליכון ה-UI ליצירת צורת הלוגו.</string>
+    <string name="v22_exp">מציע ממשק בחירה בודדת ב-ChipGroup של Material 3 המשנה דינמית את גוון הרקע ומעביר את נתוני הפרסונה ב-Intent.</string>
+    <string name="v23_exp">שימוש ב-CoordinatorLayout ו-BottomSheetBehavior עם חלונית מבצבצת. כולל טיימר של 3 שניות המפעיל אנימציית רמז עדינה לעידוד אינטראקציה.</string>
+    <string name="v24_exp">שילוב CameraX PreviewView עם מצלמה קדמית ובאנר הצהרת פרטיות מפורש. מלמד חיבור מחזור חיים של CameraX, הרשאות מצלמה ושיטות עבודה מומלצות.</string>
+    <string name="v25_exp">מציג CalendarView עם הדגשת התאריך כיום, ומחשב רצף ימי שימוש מאוחסן ב-SharedPreferences. מלמד חישובי תאריכים ואנימציות סיבוב מחוגים.</string>
+
+    <!-- Common -->
+    <string name="btn_launch_demo">הפעל דמו</string>
+    <string name="btn_info_dialog">מידע</string>
+    <string name="btn_close_dialog">הבנתי</string>
+</resources>
